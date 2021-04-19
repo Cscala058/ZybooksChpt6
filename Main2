@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main2 {
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int n;
+        int i;
+
+        System.out.println("Enter an integer:");
+        n = scnr.nextInt();
+
+        System.out.print("Sequence: ");
+        if (n > 0) {
+            if (n % 2 == 1) {
+                n--;
+            }
+            while (n != 0) {
+                System.out.print(n + " ");
+                n -= 2;
+            }
+        }
+        System.out.println("0 ");
+    }
+}
