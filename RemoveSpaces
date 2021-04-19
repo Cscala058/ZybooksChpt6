@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class RemoveSpaces {
+   public static void main(String[] args) {
+    Scanner scr = new Scanner(System.in);
+    String input = scr.nextLine();
+    input = input.replaceAll("\\s", "");
+    System.out.println(input);
+    scr.close();
+   }
+}
