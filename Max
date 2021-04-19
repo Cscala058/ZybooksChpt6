@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Max
+{
+   public int findMax()
+   {
+       int max=0;
+       Scanner input=new Scanner(System.in);
+       int val=input.nextInt();
+       while(val>=0)
+       {
+           if(val>max)
+               max=val;
+           val=input.nextInt();
+       }
+       return max;
+   }
+   public static void main(String[] args) {
+       Max test=new Max();
+       System.out.println(test.findMax());
+   }
+}
