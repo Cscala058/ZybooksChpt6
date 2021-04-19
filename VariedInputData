@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+
+public class VariedInputData {
+   public static void main(String[] args) {
+      /* Type your code here. */
+         Scanner scan = new Scanner(System.in);
+
+        int max, n, count = 0;
+        int avg = 0;
+
+        n = scan.nextInt();
+        max = n;
+        while(n>=0){
+            if(max < n)
+                max = n;
+            avg += n;
+            count++;
+            n = scan.nextInt();
+        }
+        avg = avg / count;
+        System.out.println(avg+" "+max);
+    }
+   }
